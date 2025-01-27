@@ -55,49 +55,5 @@ Esta función:
 
 Este proyecto está diseñado para ejecutarse en cualquier navegador moderno que soporte JavaScript.
 
-## Código
-
-```javascript
-let amigos = [];
-
-function agregarAmigo(){
-    const nombre = document.querySelector(`#amigo`).value.trim();
-
-    if (nombre !== ""){
-        amigos.push(nombre);
-        actualizarLista();
-    } else if (amigos.includes(nombre)) {
-        alert("El nombre ya está en la lista.");
-    } else {
-        alert("Por favor, inserte un nombre.");
-    }
-    document.querySelector(`#amigo`).value = ``;
-}
-
-function actualizarLista(){
-    let listaDeNombres = document.getElementById("listaAmigos");
-    listaDeNombres.innerHTML = "";
-
-    for(let i = 0; i < amigos.length; i++){
-        let agregarLi = document.createElement("li");
-        agregarLi.textContent = amigos[i];
-        listaDeNombres.appendChild(agregarLi);
-    }
-}
-
-function sortearAmigo(){
-    if(amigos.length > 0){
-        let amigoSecreto = amigos[Math.floor(Math.random() * amigos.length)];
-        let mostraAmigoSecreto = document.getElementById("resultado");
-        mostraAmigoSecreto.innerHTML = "";
-        mostraAmigoSecreto.textContent = `El amigo secreto sorteado es: ${amigoSecreto}`;
-    } else {
-        console.log("No amigos");
-    }
-    document.getElementById("listaAmigos").innerHTML = "";
-}
-```
-
-
 
 
