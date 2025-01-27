@@ -1,12 +1,16 @@
 ![banner](https://github.com/user-attachments/assets/cc72bddb-5576-4828-9341-d083ccdd2129)
 
- <p align="left">
-    <img src="https://img.shields.io/badge/STATUS-EN%20DESAROLLO-red"> 
-    <img src="https://img.shields.io/badge/version-1.0.0-orange">
-    <img src="https://img.shields.io/badge/license-MIT-blue">
-    <img src="https://img.shields.io/badge/support-active-brightgreen">
-    <img src="https://img.shields.io/github/stars/BreyanCordova/Amigo-Secreto?style=social">
- </p>
+ 
+![Estado](https://img.shields.io/badge/Status-En%20Desarrollo-red)
+![Version](https://img.shields.io/badge/Version-1.0.0-orange)
+![Fecha Personalizada](https://img.shields.io/badge/release%20Date-2025-yellow)
+![GitHub](https://img.shields.io/badge/Support-active-brightgreen)
+![MIT License](https://img.shields.io/badge/License-MIT-yellowgreen)
+![Creative Commons](https://img.shields.io/badge/License-Creative%20Commons%20BY%204.0-lightgrey)
+![GitHub](https://img.shields.io/github/stars/BreyanCordova/Amigo-Secreto?style=social)
+
+
+
 
    
 # Amigo Secreto
@@ -24,7 +28,8 @@ Este proyecto es una aplicación simple desarrollada en JavaScript para gestiona
 4. [Requisitos](#requisitos)
 5. [Código](#código)
 6. [Mejoras Futuras](#mejoras-futuras)
-7. [Autor](#autor)
+7. [Contacto](#contacto)
+8. [Licencia](#licencia)
 
 ## Descripción
 
@@ -80,7 +85,7 @@ Esta función:
 Este proyecto está diseñado para ejecutarse en cualquier navegador moderno que soporte JavaScript.
 
 ## Código
-
+Código desarrollado en JavaScript.
 ```javascript
 let amigos = [];
 
@@ -121,6 +126,9 @@ function sortearAmigo(){
     document.getElementById("listaAmigos").innerHTML = "";
 }
 ```
+> [!WARNING]
+> El programa esta en desarrollo, como tal podrían haber fallos en su ejecución.<br>
+> Se agradece su comprensíon.
 
 ## Mejoras Futuras
 
@@ -128,19 +136,18 @@ function sortearAmigo(){
 2. Introducir una función de reiniciar juego.
 3. Agregar esilos con CSS a la lista de amigos.
 
-## Autor
+## Contacto
 
 ¡Hola! Soy **Breyan Cordova**, el **desarrollador** detrás de este proyecto.
 
-- 💻 [Mi GitHub](https://github.com/juanperez-dev) — Donde comparto mis proyectos.
+> 💻 [Mi GitHub](https://github.com/juanperez-dev) — Donde comparto mis proyectos.
 
-## License
+## Licencia
 
-This project was originally provided by Alura Latam and has been modified by Breyan Cordova as part of a JavaScript learning challenge. The modifications are licensed under the MIT License.
+Este proyecto fue proporcionado originalmente por Alura Latam y ha sido modificado por **Breyan Cordova** como parte de un desafío de aprendizaje de JavaScript. Las modificaciones están licenciadas bajo la **Licencia MIT**.<br>
 
-
-
-
+> [!CAUTION]
+> La documentación de "Amigo Secreto" (por ejemplo, los archivos contenidos) pueden estar bajo licencia de Creative Commons.
 
 
 
