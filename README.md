@@ -1,3 +1,6 @@
+<h1 align="center"> Amigo Secreto </h1>
+
+
 # Amigo Secreto
 
 Este proyecto es una aplicación simple desarrollada en JavaScript para gestionar una lista de nombres y sortear un "amigo secreto" entre los participantes.
