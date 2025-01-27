@@ -141,7 +141,7 @@ function sortearAmigo(){
 
 ## Licencia
 
-Este proyecto fue proporcionado originalmente por Alura Latam y ha sido modificado por **Breyan Cordova** como parte de un desafío de aprendizaje de JavaScript. Las modificaciones están licenciadas bajo la **Licencia MIT**.<br>
+Este proyecto fue proporcionado originalmente por Alura Latam y ha sido modificado como parte de un desafío de aprendizaje de JavaScript. Las modificaciones están licenciadas bajo la **Licencia MIT**.<br>
 
 > [!CAUTION]
 > La documentación de "Amigo Secreto" (por ejemplo, los archivos contenidos) pueden estar bajo licencia de Creative Commons.
