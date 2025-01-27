@@ -21,9 +21,6 @@ Este proyecto es una aplicación simple desarrollada en JavaScript para gestiona
 
 1. [Descripción](#descripción)
 2. [Estructura del Código](#estructura-del-código)
-   - [1. agregarAmigo()](#1-agregaramigo)
-   - [2. actualizarLista()](#2-actualizarlista)
-   - [3. sortearAmigo()](#3-sortearamigo)
 3. [Uso](#uso)
 4. [Requisitos](#requisitos)
 5. [Código](#código)
