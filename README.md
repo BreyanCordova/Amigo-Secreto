@@ -1,13 +1,30 @@
-<h1 align="center"> DESAFIO ALURA: Amigo Secreto </h1>
+![banner](https://github.com/user-attachments/assets/cc72bddb-5576-4828-9341-d083ccdd2129)
 
+ <p align="left">
+    <img src="https://img.shields.io/badge/STATUS-EN%20DESAROLLO-red"> 
+    <img src="https://img.shields.io/badge/version-1.0.0-orange">
+    <img src="https://img.shields.io/badge/license-MIT-blue">
+    <img src="https://img.shields.io/badge/support-active-brightgreen">
+    <img src="https://img.shields.io/github/stars/BreyanCordova/Amigo-Secreto?style=social">
+ </p>
 
-<em> # Su título aquí </em>
-
-
-
+   
 # Amigo Secreto
 
 Este proyecto es una aplicación simple desarrollada en JavaScript para gestionar una lista de nombres y sortear un "amigo secreto" entre los participantes.
+
+## Índice
+
+1. [Descripción](#descripción)
+2. [Estructura del Código](#estructura-del-código)
+   - [1. agregarAmigo()](#1-agregaramigo)
+   - [2. actualizarLista()](#2-actualizarlista)
+   - [3. sortearAmigo()](#3-sortearamigo)
+3. [Uso](#uso)
+4. [Requisitos](#requisitos)
+5. [Código](#código)
+6. [Mejoras Futuras](#mejoras-futuras)
+7. [Autor](#autor)
 
 ## Descripción
 
@@ -61,6 +78,74 @@ Esta función:
 ## Requisitos
 
 Este proyecto está diseñado para ejecutarse en cualquier navegador moderno que soporte JavaScript.
+
+## Código
+
+```javascript
+let amigos = [];
+
+function agregarAmigo(){
+    const nombre = document.querySelector(`#amigo`).value.trim();
+
+    if (nombre !== ""){
+        amigos.push(nombre);
+        actualizarLista();
+    } else if (amigos.includes(nombre)) {
+        alert("El nombre ya está en la lista.");
+    } else {
+        alert("Por favor, inserte un nombre.");
+    }
+    document.querySelector(`#amigo`).value = ``;
+}
+
+function actualizarLista(){
+    let listaDeNombres = document.getElementById("listaAmigos");
+    listaDeNombres.innerHTML = "";
+
+    for(let i = 0; i < amigos.length; i++){
+        let agregarLi = document.createElement("li");
+        agregarLi.textContent = amigos[i];
+        listaDeNombres.appendChild(agregarLi);
+    }
+}
+
+function sortearAmigo(){
+    if(amigos.length > 0){
+        let amigoSecreto = amigos[Math.floor(Math.random() * amigos.length)];
+        let mostraAmigoSecreto = document.getElementById("resultado");
+        mostraAmigoSecreto.innerHTML = "";
+        mostraAmigoSecreto.textContent = `El amigo secreto sorteado es: ${amigoSecreto}`;
+    } else {
+        console.log("No amigos");
+    }
+    document.getElementById("listaAmigos").innerHTML = "";
+}
+```
+
+## Mejoras Futuras
+
+1. Evitar ingresar nombres con números.
+2. Introducir una función de reiniciar juego.
+3. Agregar esilos con CSS a la lista de amigos.
+
+## Autor
+
+¡Hola! Soy **Breyan Cordova**, el **desarrollador** detrás de este proyecto.
+
+- 💻 [Mi GitHub](https://github.com/juanperez-dev) — Donde comparto mis proyectos.
+
+## License
+
+This project was originally provided by Alura Latam and has been modified by Breyan Cordova as part of a JavaScript learning challenge. The modifications are licensed under the MIT License.
+
+
+
+
+
+
+
+
+
 
 
 
